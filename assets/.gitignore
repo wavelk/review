@@ -1,0 +1,50 @@
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build artifacts and production files
+dist/
+build/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# IDE and Editor settings
+*.vscode/
+.idea/
+*.iml
+settings.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Generated files
+*.map
+
+# Package lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Cache files
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Public files for deployment (optional)
+public/
