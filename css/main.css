@@ -893,8 +893,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-  background: #008d44;
-  border-color: #008d44;
+  background: #a9aca9;
+  border-color: #a9aca9;
 }
 
 /* button modifiers
@@ -1472,7 +1472,7 @@ input::-moz-focus-inner {
   font-size: 4.5rem;
   line-height: 1.244;
   margin-top: 0;
-  margin-bottom: 3.2rem;
+  margin-bottom: 0.1rem;
 }
 
 .subhead {
@@ -2125,7 +2125,7 @@ input::-moz-focus-inner {
   content: "";
   height: 2px;
   width: 8rem;
-  background-color: #021966;
+  background-color: #e2a601;
   position: absolute;
   left: 8px;
   top: 0;
@@ -2662,7 +2662,7 @@ html.no-csstransitions .home-content__main {
 .s-about {
   padding-top: 20rem;
   padding-bottom: 0;
-  background-color: #7703ad;
+  background-color: #333232;
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
   position: relative;
@@ -2833,6 +2833,7 @@ html.no-csstransitions .home-content__main {
   background-color: #f2f2f2;
   overflow: hidden;
   position: relative;
+  border-bottom: 2px solid gold;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3266,11 +3267,11 @@ html.no-csstransitions .home-content__main {
   color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 232px 72px;
+  background-size: 232px 152px;
 }
 
-.s-download .download-content__badges li a.badge-appstore {
-  background-image: url("../images/appstore.png");
+.s-download .download-content__badges li a.badge-whatspp {
+  background-image: url("../images/whatsapp_button.png");
 }
 
 .s-download .download-content__badges li a.badge-googleplay {
@@ -4664,6 +4665,148 @@ body.search-is-visible {
 .comment-respond form {
   padding-top: 6rem;
 }
+
+/* Wrapper */
+/* Pricing Section Scoped */
+.pricing-cards {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.pricing-cards .pricing-card {
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+  max-width: 320px;
+}
+
+.pricing-cards .pricing-card {
+  transform: translateY(-8px);
+  
+}
+
+.pricing-cards .item-plan:hover {
+  transform: translateY(-18px);
+}
+/* Colored Background Wrapper */
+.pricing-cards .pricing-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.pricing-cards .purple::before {
+  background: #A8AAAC;
+}
+.pricing-cards .green::before {
+  background: #e2a601;
+}
+.pricing-cards .blue::before {
+  background: #A8AAAC;
+}
+
+/* Inner White Card */
+.pricing-cards .card-inner {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  position: relative;
+  border:2px solid;
+  z-index: 1;
+}
+
+.border-gold {
+  border-color: #e2a601 !important;
+}
+
+.border-grey {
+  border-color: #A8AAAC !important;
+}
+
+.pricing-cards .plan-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin: -5px 0 10px;
+  font-style: italic;
+}
+
+.pricing-cards .plan-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #333;
+  display: inline-block;
+  border: 2px solid grey;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.pricing-cards .plan-price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #000;
+}
+
+.pricing-cards .plan-price .per {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.pricing-cards .plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.pricing-cards .plan-features li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.pricing-cards .plan-btn {
+  display: inline-block;
+  background: #1565c0;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.pricing-cards .purple .plan-btn {
+  background: #A8AAAC;
+}
+.pricing-cards .green .plan-btn {
+  background: #e2a601;
+}
+.pricing-cards .blue .plan-btn {
+  background: #A8AAAC;
+}
+
+.pricing-cards .plan-btn:hover {
+  opacity: 0.9;
+}
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
