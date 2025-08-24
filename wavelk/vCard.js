@@ -6,7 +6,7 @@ document.getElementById("saveContact").addEventListener("click", function () {
 
   const vcardData = `
 BEGIN:VCARD
-VERSION:4.0
+VERSION:3.0
 N:Online Store;Wave.lk;;;
 FN:Wave Business
 ORG:Wave.lk
