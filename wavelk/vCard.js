@@ -12,7 +12,7 @@ TEL;TYPE=cell:+94772260973
 // TEL;TYPE=home:+94112345678
 // TEL;TYPE=work:+94112349876
 // TEL;TYPE=fax:+94112349877
-TEL;TYPE=whatsapp:https://api.whatsapp.com/send?phone=94772260973
+TEL;TYPE=whatsapp:+94772260973
 EMAIL;TYPE=work:info@wavelk.com
 EMAIL;TYPE=support:support@wavelk.com
 // URL;TYPE=website:https://www.wavelk.com
