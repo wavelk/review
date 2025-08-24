@@ -3,7 +3,23 @@ VERSION:3.0
 N:Wave;Business;;;
 FN:Wave Business
 ORG:Wave Lanka
+
 TEL;TYPE=cell:+94772260973
-EMAIL:info@wavelk.com
-URL:https://www.instagram.com/contact.wavelk/
+TEL;TYPE=home:+94112345678
+TEL;TYPE=work:+94112349876
+TEL;TYPE=fax:+94112349877
+TEL;TYPE=whatsapp:+94772260973
+
+EMAIL;TYPE=work:info@wavelk.com
+EMAIL;TYPE=support:support@wavelk.com
+
+URL;TYPE=website:https://www.wavelk.com
+URL;TYPE=facebook:https://www.facebook.com/wavelk
+URL;TYPE=instagram:https://www.instagram.com/contact.wavelk/
+URL;TYPE=linkedin:https://www.linkedin.com/company/wavelk
+URL;TYPE=tiktok:https://www.tiktok.com/@wavelk
+
+ADR;TYPE=work:;;123 Wave Tower;Colombo;;10000;Sri Lanka
+
+NOTE:Official business contact card of Wave Lanka
 END:VCARD
