@@ -126,13 +126,13 @@ body {
 }
 
 @keyframes blink {
-  0% { background-color: #007bff; color: white; }
-  50% { background-color: #ffffff; color: #007bff; border: 2px solid #007bff; }
-  100% { background-color: #007bff; color: white; }
+  0% { background-color: #434547; color: white; }
+  50% { background-color: #ffffff; color: #434547; border: 2px solid #434547; }
+  100% { background-color: #434547; color: white; }
 }
 
 #saveContact {
-  animation: blink 1s infinite; /* blink every 1 second */
+  animation: blink 4s infinite; /* blink every 1 second */
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
