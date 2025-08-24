@@ -1,16 +1,56 @@
+// Resize Base64 image for phone compatibility
+function resizeBase64Img(base64, maxWidth = 200, maxHeight = 200) {
+  return new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement("canvas");
+      let width = img.width;
+      let height = img.height;
+
+      // Maintain aspect ratio
+      if (width > maxWidth) {
+        height *= maxWidth / width;
+        width = maxWidth;
+      }
+      if (height > maxHeight) {
+        width *= maxHeight / height;
+        height = maxHeight;
+      }
+
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0, width, height);
+      resolve(canvas.toDataURL("image/png").split(",")[1]);
+    };
+    img.src = "data:image/png;base64," + base64;
+  });
+}
+
+// Generate vCard when button clicked
 document.getElementById("save-contact").addEventListener("click", async function() {
-  // Load image from page
-  const img = document.querySelector(".logo img"); // logo_no_bg.png
+  const imgElement = document.getElementById("logo-image");
+
+  // Wait for image to load
+  await new Promise(resolve => {
+    if (imgElement.complete) resolve();
+    else imgElement.onload = resolve;
+  });
+
+  // Draw image to canvas
   const canvas = document.createElement("canvas");
-  canvas.width = img.width;
-  canvas.height = img.height;
+  canvas.width = imgElement.naturalWidth;
+  canvas.height = imgElement.naturalHeight;
   const ctx = canvas.getContext("2d");
-  ctx.drawImage(img, 0, 0);
+  ctx.drawImage(imgElement, 0, 0);
 
-  // Convert image to Base64
-  const base64Image = canvas.toDataURL("image/png").split(",")[1];
+  // Convert to Base64
+  let base64Image = canvas.toDataURL("image/png").split(",")[1];
 
-  // Create vCard content
+  // Resize for phone compatibility
+  base64Image = await resizeBase64Img(base64Image);
+
+  // vCard content
   const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:Wave;Business;;;
@@ -34,7 +74,7 @@ ${base64Image}
 NOTE:Official business contact card of Wave Lanka
 END:VCARD`;
 
-  // Download the vCard
+  // Download vCard
   const blob = new Blob([vcard], { type: "text/vcard" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
