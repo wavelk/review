@@ -7,9 +7,9 @@ document.getElementById("saveContact").addEventListener("click", function () {
   const vcardData = `
 BEGIN:VCARD
 VERSION:3.0
-N:Wave;Business;;;
+N:WaveLK;Online Store;;;
 FN:Wave Business
-ORG:Wave Lanka
+ORG:Wave.lk
 TEL;TYPE=cell:+94772260973
 TEL;TYPE=home:+94112345678
 TEL;TYPE=work:+94112349876
