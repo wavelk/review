@@ -6,25 +6,25 @@ document.getElementById("saveContact").addEventListener("click", function () {
 
   const vcardData = `
 BEGIN:VCARD
-VERSION:3.0
-N:WaveLK;Online Store;;;
+VERSION:4.0
+N:Online Store;Wave.lk;;;
 FN:Wave Business
 ORG:Wave.lk
 TEL;TYPE=cell:+94772260973
-TEL;TYPE=home:+94112345678
-TEL;TYPE=work:+94112349876
-TEL;TYPE=fax:+94112349877
+// TEL;TYPE=home:+94112345678
+// TEL;TYPE=work:+94112349876
+// TEL;TYPE=fax:+94112349877
 TEL;TYPE=whatsapp:+94772260973
 EMAIL;TYPE=work:info@wavelk.com
 EMAIL;TYPE=support:support@wavelk.com
-URL;TYPE=website:https://www.wavelk.com
-URL;TYPE=facebook:https://www.facebook.com/wavelk
+// URL;TYPE=website:https://www.wavelk.com
+URL;TYPE=facebook:https://facebook.com/profile.php?id=61569850245481
 URL;TYPE=instagram:https://www.instagram.com/contact.wavelk/
-URL;TYPE=linkedin:https://www.linkedin.com/company/wavelk
-URL;TYPE=tiktok:https://www.tiktok.com/@wavelk
-ADR;TYPE=work:;;123 Wave Tower;Colombo;;10000;Sri Lanka
+// URL;TYPE=linkedin:https://www.linkedin.com/company/wavelk
+URL;TYPE=tiktok:https://www.tiktok.com/@contact.wavelk?_t=ZS-8sntyyyHCJG&_r=1
+// ADR;TYPE=work:;;123 Wave Tower;Colombo;;10000;Sri Lanka
 PHOTO;ENCODING=b;TYPE=PNG:${base64Image}
-NOTE:Official business contact card of Wave Lanka
+NOTE:Official business card of Wave.lk Online Store
 END:VCARD
   `.trim();
 
