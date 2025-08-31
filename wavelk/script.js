@@ -7,8 +7,8 @@ setTimeout(function () {
   document.getElementById("shareCard").addEventListener("click", () => {
     if (navigator.share) {
       navigator.share({
-        title: "My Smart Business Card",
-        text: "Check out my digital business card!",
+        title: "Smart Digital Business Card-Wave.lk",
+        text: "Check out Smart Digital Business Card of Wave.lk Online Store",
         url: window.location.href
       }).catch(err => console.log("Share cancelled:", err));
     } else {
