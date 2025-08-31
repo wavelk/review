@@ -56,8 +56,13 @@ body {
     visibility: hidden;
 }
 
+#main-content{
+    min-height: calc(var(--vh, 1vh) * 100 - 80px);
+}
+
 /* Main content styling */
 .container {
+    min-height: calc(var(--vh, 1vh) * 100);
     text-align: center;
     background-color: white;
     border-radius: 12px;
