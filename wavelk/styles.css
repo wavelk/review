@@ -7,7 +7,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* Splash page styling */
@@ -94,14 +94,14 @@ body {
     align-items: center;
     border: 2px solid #ffa726;
     border-radius: 8px;
-    padding: 4px;
+    padding: 10px;
     text-decoration: none;
     color: #333;
     transition: transform 0.2s ease-in-out;
 }
 
 .social-button i {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 8px;
 }
 
