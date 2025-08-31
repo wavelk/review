@@ -220,4 +220,9 @@ body {
   color: #007bff; /* highlight brand name */
 }
 
+.full-height {
+  height: calc(var(--vh) * 100);
+}
+
+
 

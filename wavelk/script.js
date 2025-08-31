@@ -16,3 +16,10 @@ setTimeout(function () {
       alert("Sharing is not supported in this browser. Please copy the link: " + window.location.href);
     }
   });
+
+function setVh() {
+  document.documentElement.style.setProperty('--vh', window.innerHeight * 0.01 + 'px');
+}
+setVh();
+window.addEventListener('resize', setVh);
+
